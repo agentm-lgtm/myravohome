@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myravohome Barber Services - Professional Hair Cutting & Grooming</title>
+    <meta name="description" content="Professional barber services at Myravohome. Expert hair cutting, beard grooming, and styling. Visit us today for quality grooming services. Click here to continue learning about our services.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .header_kx7m {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .container_qp9n {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav_header_jk2l {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo_mx8p {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav_menu_rl4q {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav_menu_rl4q a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav_menu_rl4q a:hover {
+            color: #d4af37;
+        }
+
+        .hero_section_vb3x {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero_content_wm5k {
+            max-width: 800px;
+        }
+
+        .hero_content_wm5k h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero_content_wm5k p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .cta_button_nt7r {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta_button_nt7r:hover {
+            background-color: #e6c547;
+        }
+
+        .services_section_hq8m {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .section_title_zx2p {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .services_grid_kl9v {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .service_card_pq4m {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #d4af37;
+        }
+
+        .service_card_pq4m:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service_card_pq4m h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .service_card_pq4m p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .about_section_jm3k {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .about_content_vp7l {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about_text_kw9m h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .about_text_kw9m p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .about_image_rx2m img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .history_section_tn4p {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .history_timeline_qb6m {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline_item_xc8n {
+            padding: 30px;
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #d4af37;
+            border-radius: 4px;
+        }
+
+        .timeline_item_xc8n h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .timeline_item_xc8n p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .team_section_lp2m {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .team_grid_wd5k {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team_member_jx3m {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .team_member_jx3m img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .team_member_jx3m h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .team_member_jx3m p {
+            color: #d4af37;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .team_member_jx3m .bio_text_ky7m {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .reviews_section_gm9p {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .reviews_grid_hs4k {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .review_card_pn8m {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid #d4af37;
+        }
+
+        .stars_rating_jk2m {
+            color: #d4af37;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .review_card_pn8m p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .reviewer_name_qx7m {
+            font-weight: bold;
+            color: #1a1a1a;
+            font-size: 14px;
+        }
+
+        .techniques_section_vl3m {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .techniques_grid_kp9m {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .technique_card_rx4m {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .technique_card_rx4m h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .technique_card_rx4m p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .equipment_section_tn2k {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .equipment_content_vx5m {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .equipment_image_jm7p img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .equipment_text_kl4m h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .equipment_text_kl4m p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .benefits_section_qp8m {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .benefits_list_rl2m {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit_item_sx9m {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .benefit_item_sx9m h4 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .benefit_item_sx9m p {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .contact_section_wm3k {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact_content_jx5m h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact_content_jx5m p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact_info_kp7m {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .info_box_tn8m {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .info_box_tn8m h3 {
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+        .info_box_tn8m p {
+            font-size: 14px;
+        }
+
+        .phone_link_vx2m {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .phone_link_vx2m:hover {
+            color: #e6c547;
+        }
+
+        .footer_section_qm9p {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer_content_rx3m {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .footer_column_jk2m h4 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .footer_column_jk2m p {
+            font-size: 12px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .footer_column_jk2m a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .footer_column_jk2m a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_bottom_ql5m {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .modal_popup_kx9m {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal_content_vp4m {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .close_button_jm2k {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close_button_jm2k:hover {
+            color: #000;
+        }
+
+        .modal_content_vp4m h2 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .modal_content_vp4m h3 {
+            color: #d4af37;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .modal_content_vp4m p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .modal_content_vp4m ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .modal_content_vp4m li {
+            color: #555;
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .gallery_section_rl7m {
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .gallery_grid_kp3m {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery_item_jx8m {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery_item_jx8m:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery_item_jx8m img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .faq_section_vn4m {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .faq_container_qx2m {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq_item_kl9m {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .faq_question_jm5m {
+            padding: 20px;
+            background: #f8f9fa;
+            cursor: pointer;
+            font-weight: bold;
+            color: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq_question_jm5m:hover {
+            background: #e8e9ea;
+        }
+
+        .faq_answer_rl3m {
+            padding: 20px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq_answer_rl3m.active_state_kx2m {
+            display: block;
+        }
+
+        .click_here_link_vp9m {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .click_here_link_vp9m:hover {
+            color: #e6c547;
+        }
+
+        @media (max-width: 768px) {
+            .nav_menu_rl4q {
+                gap: 15px;
+                font-size: 12px;
+            }
+
+            .hero_content_wm5k h1 {
+                font-size: 32px;
+            }
+
+            .hero_content_wm5k p {
+                font-size: 16px;
+            }
+
+            .about_content_vp7l,
+            .equipment_content_vx5m {
+                grid-template-columns: 1fr;
+            }
+
+            .section_title_zx2p {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header_kx7m">
+        <div class="container_qp9n">
+            <div class="nav_header_jk2l">
+                <div class="logo_mx8p">MYRAVOHOME BARBER</div>
+                <nav>
+                    <ul class="nav_menu_rl4q">
+                        <li><a href="#services_anchor_kx2m">Services</a></li>
+                        <li><a href="#about_anchor_vp3m">About</a></li>
+                        <li><a href="#team_anchor_jm4m">Team</a></li>
+                        <li><a href="#techniques_anchor_rl5m">Techniques</a></li>
+                        <li><a href="#reviews_anchor_qx6m">Reviews</a></li>
+                        <li><a href="#contact_anchor_kl7m">Contact</a></li>
+                        <li><a href="javascript:void(0)" onclick="openModal('privacy_modal_jx8m')">Privacy</a></li>
+                        <li><a href="javascript:void(0)" onclick="openModal('terms_modal_vp9m')">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero_section_vb3x">
+        <div class="hero_content_wm5k">
+            <h1>Professional Barber Services</h1>
+            <p>Experience expert grooming and styling at Myravohome. We provide comprehensive hair cutting, beard trimming, and personalized grooming solutions for every client. <a href="#services_anchor_kx2m" class="click_here_link_vp9m">Click here to continue</a> exploring our full range of services.</p>
+            <a href="#contact_anchor_kl7m" class="cta_button_nt7r">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services_section_hq8m" id="services_anchor_kx2m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Our Services</h2>
+            <div class="services_grid_kl9v">
+                <div class="service_card_pq4m">
+                    <h3>Classic Haircut</h3>
+                    <p>Traditional and modern haircut styles tailored to your preferences. Our experienced barbers use precision techniques to create clean lines and perfect fades. Each cut is customized based on your hair type and facial structure.</p>
+                </div>
+                <div class="service_card_pq4m">
+                    <h3>Beard Grooming</h3>
+                    <p>Complete beard care including trimming, shaping, and styling. We use specialized techniques to maintain beard health and appearance. Professional beard oil treatments available for enhanced grooming results.</p>
+                </div>
+                <div class="service_card_pq4m">
+                    <h3>Fade Haircuts</h3>
+                    <p>Precision fade cuts with various lengths and styles. From low fades to high fades, we create sharp transitions and clean edges. Perfect for those seeking contemporary and stylish looks.</p>
+                </div>
+                <div class="service_card_pq4m">
+                    <h3>Hair Styling</h3>
+                    <p>Expert styling services for special occasions and everyday looks. We work with various hair products and techniques to achieve your desired style. Consultation included to find the perfect look for you.</p>
+                </div>
+                <div class="service_card_pq4m">
+                    <h3>Shaving Services</h3>
+                    <p>Traditional straight razor shaving with hot towel treatment. Relaxing and rejuvenating experience with professional-grade products. Ideal for sensitive skin and those seeking authentic barber experience.</p>
+                </div>
+                <div class="service_card_pq4m">
+                    <h3>Hair Coloring</h3>
+                    <p>Professional hair coloring and touch-up services. We use quality products suitable for all hair types. Expert color consultation to find the perfect shade for your complexion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about_section_jm3k" id="about_anchor_vp3m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">About Myravohome Barber</h2>
+            <div class="about_content_vp7l">
+                <div class="about_text_kw9m">
+                    <h2>Crafting Excellence in Grooming</h2>
+                    <p>Myravohome Barber has been serving the community with dedication to quality and customer satisfaction. Our barbers are trained professionals with years of experience in the grooming industry. We believe in providing personalized service to every client who walks through our doors.</p>
+                    <p>Our commitment extends beyond just haircuts. We focus on building relationships with our clients and understanding their unique grooming needs. Each visit is an opportunity to deliver exceptional service and create a welcoming atmosphere.</p>
+                    <p>We maintain the highest standards of hygiene and use only professional-grade tools and products. Our shop is designed to be a comfortable space where clients can relax and enjoy their grooming experience. <a href="#team_anchor_jm4m" class="click_here_link_vp9m">Click here to continue</a> to meet our talented team.</p>
+                </div>
+                <div class="about_image_rx2m">
+                    <img src="https://images.pexels.com/photos/3807516/pexels-photo-3807516.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional barber shop interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history_section_tn4p">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Our Journey</h2>
+            <div class="history_timeline_qb6m">
+                <div class="timeline_item_xc8n">
+                    <h3>2010 - The Beginning</h3>
+                    <p>Myravohome Barber was founded with a vision to provide exceptional grooming services to the community. Starting with a small shop and a dedicated team, we focused on building a reputation for quality and reliability. Our first year was challenging but rewarding as we established our client base.</p>
+                </div>
+                <div class="timeline_item_xc8n">
+                    <h3>2013 - Expansion Phase</h3>
+                    <p>Due to growing demand, we expanded our services and hired additional experienced barbers. We invested in modern equipment and upgraded our facility to provide a more comfortable environment. This period marked significant growth in our client base and reputation.</p>
+                </div>
+                <div class="timeline_item_xc8n">
+                    <h3>2016 - Innovation Era</h3>
+                    <p>We introduced new grooming techniques and specialized services. Our team attended advanced training programs to stay updated with latest trends. We also implemented online booking system to make appointments more convenient for our clients.</p>
+                </div>
+                <div class="timeline_item_xc8n">
+                    <h3>2019 - Community Recognition</h3>
+                    <p>Myravohome Barber received multiple awards for customer service excellence. We became known as the go-to barber shop in the area. Our commitment to quality never wavered, and we continued to innovate and improve our services.</p>
+                </div>
+                <div class="timeline_item_xc8n">
+                    <h3>2022 - Present Day</h3>
+                    <p>Today, Myravohome Barber stands as a trusted name in professional grooming. We continue to serve hundreds of satisfied clients monthly. Our team remains dedicated to excellence, and we're constantly exploring new ways to enhance our services and client experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team_section_lp2m" id="team_anchor_jm4m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Meet Our Expert Team</h2>
+            <div class="team_grid_wd5k">
+                <div class="team_member_jx3m">
+                    <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Marcus Johnson - Head Barber">
+                    <h3>Marcus Johnson</h3>
+                    <p>Head Barber & Founder</p>
+                    <div class="bio_text_ky7m">With 15 years of experience, Marcus leads our team with expertise and passion. Specializing in classic cuts and modern fades, he's known for his attention to detail and client relationships.</div>
+                </div>
+                <div class="team_member_jx3m">
+                    <img src="https://images.pexels.com/photos/1181691/pexels-photo-1181691.jpeg?auto=compress&cs=tinysrgb&w=400" alt="David Chen - Senior Barber">
+                    <h3>David Chen</h3>
+                    <p>Senior Barber</p>
+                    <div class="bio_text_ky7m">David brings 12 years of expertise in beard grooming and styling. He's passionate about creating unique looks and has a loyal client following. His precision work is highly appreciated.</div>
+                </div>
+                <div class="team_member_jx3m">
+                    <img src="https://images.pexels.com/photos/1181692/pexels-photo-1181692.jpeg?auto=compress&cs=tinysrgb&w=400" alt="James Rodriguez - Barber">
+                    <h3>James Rodriguez</h3>
+                    <p>Professional Barber</p>
+                    <div class="bio_text_ky7m">James specializes in contemporary styles and color treatments. With 8 years of experience, he's known for his creative approach and ability to understand client visions perfectly.</div>
+                </div>
+                <div class="team_member_jx3m">
+                    <img src="https://images.pexels.com/photos/1181693/pexels-photo-1181693.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thomas Williams - Barber">
+                    <h3>Thomas Williams</h3>
+                    <p>Barber Specialist</p>
+                    <div class="bio_text_ky7m">Thomas excels in traditional shaving techniques and hot towel treatments. His calm demeanor and expertise make every client feel relaxed and valued during their visit.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="techniques_section_vl3m" id="techniques_anchor_rl5m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Grooming Techniques We Master</h2>
+            <div class="techniques_grid_kp9m">
+                <div class="technique_card_rx4m">
+                    <h3>Precision Fading</h3>
+                    <p>Our barbers master the art of creating smooth transitions between different hair lengths. Using clippers with various guard sizes, we achieve clean fades that enhance facial features. This technique requires years of practice and steady hands.</p>
+                </div>
+                <div class="technique_card_rx4m">
+                    <h3>Beard Sculpting</h3>
+                    <p>Expert beard shaping and contouring to complement your face shape. We use specialized techniques to create defined lines and maintain beard health. Each beard is treated as a unique canvas requiring individual attention.</p>
+                </div>
+                <div class="technique_card_rx4m">
+                    <h3>Straight Razor Shaving</h3>
+                    <p>Traditional shaving method using straight razors for the closest shave possible. Combined with hot towel treatment, this technique provides a relaxing and rejuvenating experience. Perfect for sensitive skin and those seeking authentic barber services.</p>
+                </div>
+                <div class="technique_card_rx4m">
+                    <h3>Scissor Over Comb</h3>
+                    <p>Classic technique using scissors and comb for precise cutting. This method allows for greater control and customization. Ideal for creating textured looks and blending different hair lengths seamlessly.</p>
+                </div>
+                <div class="technique_card_rx4m">
+                    <h3>Clipper Blending</h3>
+                    <p>Advanced technique for creating smooth transitions using various clipper sizes. Our barbers are skilled in blending different lengths to create cohesive and polished looks. This technique is essential for modern haircut styles.</p>
+                </div>
+                <div class="technique_card_rx4m">
+                    <h3>Hair Coloring Application</h3>
+                    <p>Professional color application using quality products and expert techniques. We ensure even coverage and vibrant results. Our colorists understand color theory and can recommend shades that complement your complexion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment_section_tn2k">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Professional Equipment & Tools</h2>
+            <div class="equipment_content_vx5m">
+                <div class="equipment_image_jm7p">
+                    <img src="https://images.pexels.com/photos/3807515/pexels-photo-3807515.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional barber tools and equipment">
+                </div>
+                <div class="equipment_text_kl4m">
+                    <h2>Quality Tools for Quality Results</h2>
+                    <p>At Myravohome Barber, we invest in the finest professional-grade equipment. Our tools are regularly maintained and sanitized to ensure client safety and optimal performance. We believe that quality equipment is essential for delivering exceptional results.</p>
+                    <p>We use premium clippers from leading manufacturers, ensuring precision and durability. Our straight razors are professionally maintained and sterilized. Scissors are regularly sharpened to maintain cutting precision. All tools meet professional barber standards.</p>
+                    <p>Our shop is equipped with comfortable barber chairs, quality lighting, and modern amenities. We maintain strict hygiene protocols and use disposable items where necessary. Every aspect of our facility is designed with client comfort and safety in mind. <a href="#contact_anchor_kl7m" class="click_here_link_vp9m">Click here to continue</a> booking your appointment today.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits_section_qp8m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Why Choose Myravohome Barber</h2>
+            <div class="benefits_list_rl2m">
+                <div class="benefit_item_sx9m">
+                    <h4>Expert Barbers</h4>
+                    <p>Our team consists of highly trained and experienced barbers with years of professional expertise. Each barber is dedicated to continuous learning and staying updated with latest trends.</p>
+                </div>
+                <div class="benefit_item_sx9m">
+                    <h4>Quality Products</h4>
+                    <p>We use only professional-grade grooming products suitable for all hair types. Our products are carefully selected for their quality and effectiveness in maintaining hair health.</p>
+                </div>
+                <div class="benefit_item_sx9m">
+                    <h4>Hygiene Standards</h4>
+                    <p>We maintain the highest standards of cleanliness and sanitation. All tools are properly sterilized, and we follow strict hygiene protocols to ensure client safety.</p>
+                </div>
+                <div class="benefit_item_sx9m">
+                    <h4>Personalized Service</h4>
+                    <p>Every client receives personalized attention and consultation. We take time to understand your preferences and create looks that suit your style and personality.</p>
+                </div>
+                <div class="benefit_item_sx9m">
+                    <h4>Comfortable Environment</h4>
+                    <p>Our shop is designed to be a welcoming and relaxing space. Comfortable seating, quality lighting, and friendly atmosphere make your visit enjoyable.</p>
+                </div>
+                <div class="benefit_item_sx9m">
+                    <h4>Competitive Rates</h4>
+                    <p>We offer excellent value for our services. Our pricing is transparent with no hidden charges. We believe quality grooming should be accessible to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery_section_rl7m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Our Work Gallery</h2>
+            <div class="gallery_grid_kp3m">
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional fade haircut">
+                </div>
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807513/pexels-photo-3807513.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beard grooming service">
+                </div>
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807512/pexels-photo-3807512.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern haircut style">
+                </div>
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807511/pexels-photo-3807511.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Classic barber cut">
+                </div>
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807510/pexels-photo-3807510.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Styling service">
+                </div>
+                <div class="gallery_item_jx8m">
+                    <img src="https://images.pexels.com/photos/3807509/pexels-photo-3807509.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Barber shop interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews_section_gm9p" id="reviews_anchor_qx6m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Client Reviews & Testimonials</h2>
+            <div class="reviews_grid_hs4k">
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"Excellent service and professional barbers. Marcus gave me the best haircut I've had in years. The shop is clean and welcoming. Highly recommended!"</p>
+                    <div class="reviewer_name_qx7m">- Robert Mitchell</div>
+                </div>
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"David's beard grooming service is outstanding. He really knows how to shape and maintain beards. I've been coming here for 3 years and never disappointed."</p>
+                    <div class="reviewer_name_qx7m">- Christopher Lee</div>
+                </div>
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"First time visiting and I was impressed. James understood exactly what I wanted and delivered perfectly. The atmosphere is relaxing and professional."</p>
+                    <div class="reviewer_name_qx7m">- Anthony Davis</div>
+                </div>
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"The straight razor shave experience was incredible. Thomas made me feel completely comfortable. This is how a real barber shop should be!"</p>
+                    <div class="reviewer_name_qx7m">- Michael Thompson</div>
+                </div>
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"Great attention to detail and friendly staff. They listen to what you want and deliver results. Prices are fair for the quality of service."</p>
+                    <div class="reviewer_name_qx7m">- Kevin Anderson</div>
+                </div>
+                <div class="review_card_pn8m">
+                    <div class="stars_rating_jk2m">★★★★★</div>
+                    <p>"Been a regular customer for 2 years. Consistent quality, professional service, and great atmosphere. Myravohome Barber is my go-to place."</p>
+                    <div class="reviewer_name_qx7m">- Jason Martinez</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq_section_vn4m">
+        <div class="container_qp9n">
+            <h2 class="section_title_zx2p">Frequently Asked Questions</h2>
+            <div class="faq_container_qx2m">
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>How often should I get a haircut?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>Most people benefit from a haircut every 4-6 weeks to maintain shape and style. However, this depends on your hair type, style, and personal preference. We recommend consulting with our barbers during your visit for personalized advice.</p>
+                    </div>
+                </div>
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>Do you accept walk-ins?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>Yes, we accept walk-ins based on availability. However, we recommend booking an appointment in advance to ensure minimal wait time. You can call us or visit our shop to schedule your appointment.</p>
+                    </div>
+                </div>
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>What payment methods do you accept?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>We accept cash, credit cards, and digital payment methods. All transactions are processed securely. We also offer gift certificates for those who want to give the gift of grooming.</p>
+                    </div>
+                </div>
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>Are your tools properly sanitized?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>Absolutely. We follow strict hygiene and sanitation protocols. All tools are sterilized using professional-grade equipment. We use disposable items where necessary and maintain the highest standards of cleanliness.</p>
+                    </div>
+                </div>
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>Can I request a specific barber?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>Yes, you can request a specific barber when booking your appointment. If your preferred barber is available, we'll schedule accordingly. All our barbers are highly skilled, so you'll receive excellent service regardless.</p>
+                    </div>
+                </div>
+                <div class="faq_item_kl9m">
+                    <div class="faq_question_jm5m" onclick="toggleFaq(this)">
+                        <span>Do you offer services for children?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq_answer_rl3m">
+                        <p>Yes, we provide haircut services for children. Our barbers are experienced in working with kids and create a comfortable environment. We recommend booking an appointment to ensure a smooth experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact_section_wm3k" id="contact_anchor_kl7m">
+        <div class="container_qp9n">
+            <div class="contact_content_jx5m">
+                <h2>Get In Touch With Us</h2>
+                <p>Ready to experience professional grooming at Myravohome Barber? Contact us today to book your appointment or learn more about our services. <a href="javascript:void(0)" onclick="document.getElementById('contact_anchor_kl7m').scrollIntoView();" class="click_here_link_vp9m">Click here to continue</a> to our contact information below.</p>
+                <div class="contact_info_kp7m">
+                    <div class="info_box_tn8m">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+14155551234" class="phone_link_vx2m">+1 (415) 555-1234</a></p>
+                        <p>Call us to book an appointment or ask questions about our services.</p>
+                    </div>
+                    <div class="info_box_tn8m">
+                        <h3>Address</h3>
+                        <p>2847 Maple Street<br>San Francisco, CA 94102<br>United States</p>
+                        <p>Visit our shop for a professional grooming experience.</p>
+                    </div>
+                    <div class="info_box_tn8m">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+                        <p>We're open 7 days a week for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer_section_qm9p">
+        <div class="container_qp9n">
+            <div class="footer_content_rx3m">
+                <div class="footer_column_jk2m">
+                    <h4>About Myravohome</h4>
+                    <p>Myravohome Barber is a professional grooming establishment dedicated to providing exceptional barber services. We combine traditional techniques with modern styles to deliver outstanding results for every client.</p>
+                </div>
+                <div class="footer_column_jk2m">
+                    <h4>Quick Links</h4>
+                    <p><a href="#services_anchor_kx2m">Services</a></p>
+                    <p><a href="#team_anchor_jm4m">Our Team</a></p>
+                    <p><a href="#reviews_anchor_qx6m">Reviews</a></p>
+                    <p><a href="#contact_anchor_kl7m">Contact Us</a></p>
+                </div>
+                <div class="footer_column_jk2m">
+                    <h4>Contact Info</h4>
+                    <p>Phone: <a href="tel:+14155551234">+1 (415) 555-1234</a></p>
+                    <p>Email: <a href="mailto:info@myravohome.com">info@myravohome.com</a></p>
+                    <p>Address: 2847 Maple Street, San Francisco, CA 94102</p>
+                </div>
+                <div class="footer_column_jk2m">
+                    <h4>Legal</h4>
+                    <p><a href="javascript:void(0)" onclick="openModal('privacy_modal_jx8m')">Privacy Policy</a></p>
+                    <p><a href="javascript:void(0)" onclick="openModal('terms_modal_vp9m')">Terms of Service</a></p>
+                    <p><a href="javascript:void(0)" onclick="openModal('privacy_modal_jx8m')">Cookie Policy</a></p>
+                </div>
+            </div>
+            <div class="footer_bottom_ql5m">
+                <p>&copy; 2024 Myravohome Barber. All rights reserved. Professional grooming services for the modern man.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy_modal_jx8m" class="modal_popup_kx9m">
+        <div class="modal_content_vp4m">
+            <span class="close_button_jm2k" onclick="closeModal('privacy_modal_jx8m')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated: 2024</strong></p>
+            
+            <h3>1. Introduction</h3>
+            <p>Myravohome Barber ("we," "us," "our," or "Company") operates the website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+            
+            <h3>2. Information Collection and Use</h3>
+            <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+            <ul>
+                <li><strong>Personal Data:</strong> While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). This may include, but is not limited to:
+                    <ul>
+                        <li>Email address</li>
+                        <li>First name and last name</li>
+                        <li>Phone number</li>
+                        <li>Address, State, Province, ZIP/Postal code, City</li>
+                        <li>Cookies and Usage Data</li>
+                    </ul>
+                </li>
+                <li><strong>Usage Data:</strong> We may also collect information on how the Service is accessed and used ("Usage Data"). This may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages you visit, the time and date of your visit, the time spent on those pages, and other diagnostic data.</li>
+            </ul>
+            
+            <h3>3. Use of Data</h3>
+            <p>Myravohome Barber uses the collected data for various purposes:</p>
+            <ul>
+                <li>To provide and maintain our Service</li>
+                <li>To notify you about changes to our Service</li>
+                <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+                <li>To provide customer support</li>
+                <li>To gather analysis or valuable information so that we can improve our Service</li>
+                <li>To monitor the usage of our Service</li>
+                <li>To detect, prevent and address technical issues</li>
+            </ul>
+            
+            <h3>4. Security of Data</h3>
+            <p>The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+            
+            <h3>5. Changes to This Privacy Policy</h3>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.</p>
+            
+            <h3>6. Contact Us</h3>
+            <p>If you have any questions about this Privacy Policy, please contact us at info@myravohome.com or call +1 (415) 555-1234.</p>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="terms_modal_vp9m" class="modal_popup_kx9m">
+        <div class="modal_content_vp4m">
+            <span class="close_button_jm2k" onclick="closeModal('terms_modal_vp9m')">&times;</span>
+            <h2>Terms of Service</h2>
+            <p><strong>Last Updated: 2024</strong></p>
+            
+            <h3>1. Agreement to Terms</h3>
+            <p>By accessing and using the Myravohome Barber website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+            
+            <h3>2. Use License</h3>
+            <p>Permission is granted to temporarily download one copy of the materials (information or software) on Myravohome Barber's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+            <ul>
+                <li>Modify or copy the materials</li>
+                <li>Use the materials for any commercial purpose or for any public display</li>
+                <li>Attempt to decompile or reverse engineer any software contained on the website</li>
+                <li>Remove any copyright or other proprietary notations from the materials</li>
+                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+            </ul>
+            
+            <h3>3. Disclaimer</h3>
+            <p>The materials on Myravohome Barber's website are provided on an 'as is' basis. Myravohome Barber makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+            
+            <h3>4. Limitations</h3>
+            <p>In no event shall Myravohome Barber or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Myravohome Barber's website, even if Myravohome Barber or an authorized representative has been notified orally or in writing of the possibility of such damage.</p>
+            
+            <h3>5. Accuracy of Materials</h3>
+            <p>The materials appearing on Myravohome Barber's website could include technical, typographical, or photographic errors. Myravohome Barber does not warrant that any of the materials on its website are accurate, complete, or current. Myravohome Barber may make changes to the materials contained on its website at any time without notice.</p>
+            
+            <h3>6. Links</h3>
+            <p>Myravohome Barber has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Myravohome Barber of the site. Use of any such linked website is at the user's own risk.</p>
+            
+            <h3>7. Modifications</h3>
+            <p>Myravohome Barber may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.</p>
+            
+            <h3>8. Governing Law</h3>
+            <p>These terms and conditions are governed by and construed in accordance with the laws of California, United States, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+            
+            <h3>9. Contact Information</h3>
+            <p>If you have any questions about these Terms of Service, please contact us at info@myravohome.com or call +1 (415) 555-1234.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal_popup_kx9m')) {
+                event.target.style.display = "none";
+            }
+        }
+
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            answer.classList.toggle('active_state_kx2m');
+            const sign = element.querySelector('span:last-child');
+            sign.textContent = answer.classList.contains('active_state_kx2m') ? '−' : '+';
+        }
+    </script>
+</body>
+</html>
